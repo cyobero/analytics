@@ -1,0 +1,180 @@
+---
+title: "GRE Math Hacks, Shortcuts, and Rules"
+author: "Czar Yobero"
+date: "3/2/2017"
+output: 
+  html_document:
+    css: style.css
+in_header:
+  \usepackage{amsmath} 
+  \usepackage{amssymb}
+  \usepackage{mathtools}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 1. Formulae
+
+### 1.1 Geometry
+
+**__Squares and Rectangles__**
+
+1. Area of Square = $a^{2}=a \times a$
+
+<center>
+Example: 
+
+![$a=4$](http://mathworld.wolfram.com/images/eps-gif/Square_1000.gif)
+
+$A = a^{2} = a \times a = 4^{2} = 4 \times 4 = 16$
+</center>
+
+2. Perimeter of a Square = $2(a + a) = 2(2a)=4a$
+
+<center>
+Example:
+
+![$a=12$](http://mathworld.wolfram.com/images/eps-gif/Square_1000.gif)
+
+$P = 4a = 4 \times 12 = 48$
+</center>
+
+3. Area of a Rectangle = $lw$
+
+<center>
+Example:
+
+![$l=4 \quad w=8$](http://s3.amazonaws.com/illustrativemathematics/images/000/000/774/medium/6EE_Rectangle_Image_d32ffb80619f3e084eef899b9d9f720c.jpg?1334761991)
+
+$A = lw = 4 \times 8 = 32$
+</center>
+
+5. Perimeter of a Rectangle = $2(l+w)$
+
+<center>
+Example:
+
+![$l=4 \quad w=8$](http://s3.amazonaws.com/illustrativemathematics/images/000/000/774/medium/6EE_Rectangle_Image_d32ffb80619f3e084eef899b9d9f720c.jpg?1334761991)
+
+$P = 2(l+w)=2(4 + 8) = 2(12) = 24$
+</center>
+
+
+**__Triangles__**
+
+1. Area of a Triangle = $\frac{1}{2}bh$
+
+<center>
+Example:
+
+![$b=5 \quad h=12$](http://images.tutorvista.com/cms/images/155/altitude-of-the-triangle.png)
+
+$A = \frac{1}{2}bh = \frac{1}{2}(5)(12) = \frac{1}{2}(60) = 30$
+
+</center>
+
+2. Perimeter of a Triangle = $P = a + b + c$
+
+<center>
+Example:
+
+![$a=3 \quad b = 3 \quad c = 3$](https://vt-s3-files.s3.amazonaws.com/uploads/problem_question_image/image/44055/Screen_Shot_2016-07-07_at_11.31.44_AM.png)
+
+$P = a + b + c = 3 + 3 + 3 = 9$
+</center>
+
+3. The Pythagorean Theorem - Given a **right triangle** (a triangle that contains an angle of 90 degrees), the **hypotenuse** - the opposite of the 90-degree angle - can be found by the formula $a^{2} + b^{2} = c^{2}$.
+
+<center>
+Example:
+
+![$a=3 \quad b=4$](https://vt-s3-files.s3.amazonaws.com/uploads/problem_question_image/image/1463/Right_Triangle_With_Labeled_Sides.png)
+
+To find the hypotenuse $c$, we can apply the Pythogorean Theorem as follows
+
+$$
+\begin{aligned}
+  & a^{2} + b^{2} = c^{2} \\
+  & 3^{2} + 4^{2} = c^{2} = 9 + 16 \\
+  & c^{2} = 25 \\
+  & \sqrt{c^{2}} = \sqrt{25} = 5 \\
+  & c = 5
+\end{aligned}
+$$
+</center>
+
+
+**__Circles__**
+
+1. Area of a Circle = $\pi r^{2}, \qquad \text{where } r \text{ is the radius of the circle}$
+
+<center>
+Example:
+
+![$r=5$](http://m.mathblaster.com/Mathblaster/CoolMath/Article-Images/radius-of-a-circle.jpg)
+
+$A = \pi r^{2} = \pi5^{2}= 78.53982$
+</center>
+
+
+2. Circumference of a Circle = $C = 2\pi r, \qquad \text{where } r \text{ is the radius}$
+
+<center>
+Example:
+
+![$r=9$](http://m.mathblaster.com/Mathblaster/CoolMath/Article-Images/radius-of-a-circle.jpg)
+
+$C=2\pi r = 2\pi9 = 56.54867$
+</center>
+
+
+### 1.2 Arithmetic and Algebra
+
+1. Arithmetic mean (average) = $\mu = \frac{1}{N}\sum_{i=1}^{N}x_{i}$
+
+<center>
+Example:
+
+$$
+\begin{aligned}
+& x=\{1,5,6,7,13,21\} \quad N=6 \\
+& \mu_{x} = \frac{1}{6}\sum_{i=1}^{6}=\frac{1}{6}(1+5+6+7+13+21)=8.8\bar{3}
+\end{aligned}
+$$
+</center>
+
+
+2. Combination = $nCr=$ ${n}\choose{r}$ $=\frac{n!}{r!(n-r)!}$
+
+<center>
+Example:
+
+How many possible combinations can be formed by choosing 3 people from 8 people?
+
+$$
+\begin{aligned}
+  nCr = \binom{n}{r}=\binom{8}{3} = \frac{8!}{3!(8-3)!}=\frac{8!}{3!5!}=\frac{8\times7\times6}{3\times2\times1}=56
+\end{aligned}
+$$
+</center>
+
+3. Finding the Location of the Median = $\frac{N+1}{2}$. If the resulting dividend is an integer, then that is the location of the median. If it reults in a number ending in 0.5 (5.5 for example), then the median is located between $x_{5}$ and $x_{6}$.
+
+<center>
+Example:
+
+$$
+\begin{aligned}
+  & x \text{ is a series of 72 integers. Where is the median?} \\
+  & \frac{72}{2} = 36 
+\end{aligned}
+$$
+
+The median is located at $x_{36}$
+</center>
+
+
+
+4. The Distance or Length of a Line Segment on an Cartesian Coordinate System (xy-coordinate plane) can be calculated using the Euclidean Distance Formula = $\sqrt{(x_{2}-x_{1})^{2} + (y_{2}-y_{1})^{2}}$
